@@ -1,0 +1,268 @@
+:root {
+--img-height: 100px;
+--color1: white;
+--color2: Bisque;
+--color3: orange;
+--color4: royalblue;
+--color5: black;
+--color6: tan;
+--color7: orangered;
+--color8: AntiqueWhite;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color5);
+  background-color: var( --color2);
+  font-family: Arial, sans-serif; 
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+.fa {
+  padding:10px;
+  color: var(--color4);
+}
+
+#body-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 450px;
+}
+
+h3 {
+  align-self: center;
+  width: 300px;
+  margin-bottom: 20px;
+  color: var(--color7);
+  background-image: linear-gradient( var(--color2), var(--color1));
+  text-align: center;
+  padding: 5px;
+  border-bottom: dotted;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc( var(--img-height));
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 450px;
+  background-image: linear-gradient( var(--color3), var(--color2));
+  padding: 0.5em;
+}
+
+#header-img {
+  height: var(--img-height);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+#h2-text {
+  width: 100%;
+  margin: 0 2% 0 1%;
+  text-align: center;
+  color: var(--color2);
+  background-color:  var(--color7);
+  border: 1px solid;
+  border-color: var(--color3);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px var(--color2);
+}
+
+#space-holder {
+  min-width: 135px;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+ul#menu li {
+  padding-bottom: 2px;
+}
+
+ul#menu {
+  width: 135px;
+  padding: 8px;
+  list-style: none;
+  border-radius: 5px;
+  background-color:  var(--color8);
+  border: 2px solid;
+  border-color: var(--color3);
+  box-shadow: 5px 5px var(--color4);
+}
+
+.nav-link {
+  color: var(--color4);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#e-mail {
+  align-self:center;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+input[type="email"] {
+  font-size: 1rem;
+  padding: 4px;
+}
+
+input[type="email"]::placeholder {
+  color: var(--color4);
+}
+
+#submit {
+  width: 70px;
+  height:30px;
+  margin: 5px 15px;
+  color: var(--color1);
+  background-color: var(--color7);
+  transition: 0.5s;
+}
+
+#submit:hover {
+  background-color: var(--color4);
+}
+
+#features {
+  max-width: 80%;
+  align-self:center;
+  padding: 2%;
+  margin-bottom: 35px;
+  border: 1px solid var(--color7);
+  border-radius: 5px;
+  color: var(--color1);
+  background-color:  var(--color6);
+}
+
+#features table {
+  border-collapse: collapse;
+}
+
+#video-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#video, #video2 {
+  max-width: 320px;
+  border: 0px;
+  background-color: var(--color3);
+  padding: 7px;
+  margin: 10px;
+}
+
+#price-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.price-tag {
+  margin: 2%;
+}
+
+div.price-tag p:nth-child(1) {
+  background-color: var(--color6);
+  padding: 10px 10px 15px 10px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+div.price-tag p:nth-child(2) {
+  color: var(--color4);
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0px;
+  box-shadow: 0px 0px 5px 5px var(--color4);
+  background-color: var(--color1);
+}
+
+#sale {
+  max-width: 80%;
+  align-self: center;
+  color: var(--color5);
+  background-color: var(--color6);
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 15px 15px 0px 15px;
+}
+
+div#sale p {
+  background-image: linear-gradient( var(--color1), var(--color6));
+  margin-bottom: 15px;
+  padding-top: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+div#sale p:last-of-type {
+  color: var(--color7);
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  align-self: flex-end;
+  background-image: linear-gradient( var(--color2), var(--color3));
+  padding: 1em;
+  margin-top: 10px;
+  text-align: end;
+  line-height: 1.6;
+}
+
+footer ul {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+footer ul li {
+  display: inline;
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  padding: 3px;
+  margin: 2px;
+  color: var(--color4);
+  background-color: var(--color2);
+}
+
+@media only screen and (max-width: 600px) {
+  #price-section {
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+  }
+
+  .video {
+    max-width: 300px;
+    background-color: var(--color3);
+    padding: 7px;
+    margin: 5px;
+  }
+
+  div.price-tag:nth-child(1) {
+    padding-bottom: 5px;
+  }
+  
+  div.price-tag:nth-child(2) {
+    padding-bottom: 5px;
+  }
+}
